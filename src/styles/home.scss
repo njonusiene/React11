@@ -1,0 +1,110 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 105px;
+    color: gray;
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+  
+    a {
+      text-decoration: none;
+      background: $orange;
+      color: white;
+      padding: 15px 25px;
+      font-size: 0.9em;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover{
+        background: $hoverOrange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .inputs {
+    padding: 20px 105px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: $grey;
+    gap: 45px;
+    margin-bottom: 50px; 
+    
+
+    .input {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 260px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(211, 211, 211, 0.707);
+    padding-top: 60px;
+
+      h2 {
+        color: $grey;
+      }
+
+      h3 {
+        font-weight: 400;
+        line-height: 20px;
+        color: $grey;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin: 35px 25px;
+      padding-top: 5px;
+      text-align: center; 
+      
+      a {
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        line-height: 30px;
+        background: $orange;
+        color: white;
+        padding: 10px 20px;
+        font-size: 0.9em;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px rgba(211, 211, 211, 0.707);
+        transition: 0.3s;
+    
+        &:hover {
+          background: $hoverOrange;
+          cursor: pointer;
+        }
+      }
+    }
+        
+        button {
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: $orange;   
+            border: 1px solid $orange; 
+            padding: 10px 20px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            box-shadow: 0 0 0 1px rgba(211, 211, 211, 0.707);
+
+            &:hover{
+                background: $hoverOrange;
+                color: white;
+                cursor: pointer;
+              }
+        }
+    }

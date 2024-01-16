@@ -1,0 +1,14 @@
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    color: $grey;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Spalva pagal jūsų poreikius */
+    border-top: 1px solid lightgray; /* Jei norite atskirčių nuo turinio */
+    // z-index: 1000; /* Užtikrina, kad footer būtų viršuje kitų elementų */
+}
