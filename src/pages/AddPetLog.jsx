@@ -11,6 +11,14 @@ const AddPetLog = () => {
   });
   const [petName, setPetName] = useState('');
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
   useEffect(() => {
     const fetchPetInfo = async () => {
       try {
@@ -19,7 +27,7 @@ const AddPetLog = () => {
           const petData = await response.json();
           setPetName(petData.name);
         } else {
-          console.error('Failed to fetch pet information');
+          console.error('Failed to fetch pet information. Server returned:', response.status, response.statusText);
         }
       } catch (error) {
         console.error('Error:', error);
@@ -29,18 +37,12 @@ const AddPetLog = () => {
     fetchPetInfo();
   }, [id]);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
-  };
-
   const onSubmit = async (e) => {
     e.preventDefault();
 
     try {
+      console.log('Submitting form data:', formData); // Pridėtas console.log
+
       const response = await fetch(`https://vetbee-backend.glitch.me/v1/logs/${id}`, {
         method: 'POST',
         headers: {
@@ -60,6 +62,8 @@ const AddPetLog = () => {
       console.error('Error:', error);
     }
   };
+
+  console.log('Rendering AddPetLog component'); // Pridėtas console.log
 
   return (
     <>
