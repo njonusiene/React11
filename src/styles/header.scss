@@ -3,4 +3,14 @@
     font-size: 2em;
     padding: 5px 105px;
     box-shadow: 0 0 5px $grey;
+
+    .atom {
+        transition: 0.5s;
+
+        &:hover {
+            color: $grey;
+            transform: translateX(-15px);
+            cursor: pointer;
+        }
+    }
 }

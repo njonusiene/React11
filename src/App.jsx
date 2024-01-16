@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Input from "./pages/Input";
 import Header from "./components/Header";
@@ -18,8 +18,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/add-pet" element={<Input/>}/>
-            <Route path="/pet-log" element={<AddPetLog/>}/>
             <Route path="/pet-log/:id" element={<PetLog/>}/>
+            <Route path="/add-pet-log/:id" element={<AddPetLog/>}/>
           </Routes>
         </Router>
         <Footer/>

@@ -5,8 +5,6 @@ const PetLog = () => {
   const [listData, setListData] = useState([]);
   const { id } = useParams()
 
-  const navigate = useNavigate()
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -33,9 +31,9 @@ const PetLog = () => {
   return (
     <div>
       <div className="logtop">
-            <h1>{listData.length > 0 ? `${listData[0].name}: Health Records` : 'Loading...'}</h1>
+            <h1>{listData.length > 0 ? `${listData[0].name}: Health Records` : 'Nėra duomenų...'}</h1>
             <div>
-            <Link to='/pet-log'>ADD LOG</Link>
+            <Link to={`/add-pet-log/${id}`}>ADD LOG</Link>
             <Link to='/' className="log-link">GO BACK</Link>
             </div>
         </div>

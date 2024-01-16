@@ -77,7 +77,8 @@ const Input = () => {
                   type="email"
                   name="client_email"
                   value={formData.client_email}
-                  onChange= {handleChange}                    placeholder="lockis@gmail.com"
+                  onChange= {handleChange}  
+                  placeholder="lockis@gmail.com"
                   required
               />
               <input id='submit' type="submit"  />

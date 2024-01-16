@@ -1,10 +1,10 @@
 import React from 'react'
-import { RiReactjsFill } from "react-icons/ri";
+import { DiAtom } from "react-icons/di";
 
 const Header = () => {
   return (
     <div className='header'>
-      <RiReactjsFill /> vetbee
+      <DiAtom className="atom"/> vetbee
     </div>
   )
 }
