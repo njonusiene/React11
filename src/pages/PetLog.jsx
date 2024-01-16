@@ -43,10 +43,10 @@ const PetLog = () => {
             {listData.map(({ status, description, dob }, index) => (
             <div key={index} className="loginput">
               <h2>{status}</h2>
-              <br />
               <p>{description}</p>
-              <br />
+              <div>
               <p className='date'>{formatDate(dob)}</p>
+              </div>
             </div>
           ))}
         </div>
