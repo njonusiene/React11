@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+
 const Input = () => {
     const [formData, setFormData] = useState({
       name: '',
@@ -41,6 +42,7 @@ const Input = () => {
     
         if (response.ok) {
           console.log('Gyvūnas pridėtas sėkmingai!')
+          alert("Pridėta sėkmingai! ✅")
           navigate('/')
         } else {
           console.error('Įvyko klaida pridedant gyvūną.', result)

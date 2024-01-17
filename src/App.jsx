@@ -9,10 +9,12 @@ import AddPetLog from "./pages/AddPetLog";
 import PetLog from "./pages/PetLog";
 
 
+
 export default function App() {
  
   return (
     <>
+    
        <Header/>
         <Router>
           <Routes>

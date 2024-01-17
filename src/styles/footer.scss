@@ -6,7 +6,7 @@ footer {
     display: flex;
     color: $grey;
     font-size: 0.9em;
-    height: 30px;
+    min-height: 20px;
     align-items: center;
     justify-content: center;
     // z-index: 1000; /* Užtikrina, kad footer būtų viršuje kitų elementų */

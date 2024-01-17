@@ -43,7 +43,7 @@ const AddPetLog = () => {
     try {
       console.log('Submitting form data:', formData); // Pridėtas console.log
 
-      const response = await fetch(`https://vetbee-backend.glitch.me/v1/logs/${id}`, {
+      const response = await fetch(`https://vetbee-backend.glitch.me/v1/logs/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
