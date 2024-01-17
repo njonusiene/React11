@@ -66,6 +66,7 @@ a {
         box-shadow: 0 0 0 1px rgba(211, 211, 211, 0.707);
         padding: 20px 25px;
         text-align: center;
+        transition: 0.3s;
 
             h2 {
                 font-weight: 300;
@@ -75,9 +76,17 @@ a {
             p {
                 margin-top: 10px; 
               }
+
+            &:hover {
+                background: $hoverOrange;
+                color: white;
+                              
+            }
         }    
 
         .date {
             padding-top: 35px;
         }
+
+        
 }
