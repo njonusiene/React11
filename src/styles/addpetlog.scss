@@ -28,6 +28,7 @@
         border: 1px solid $grey;
         padding-left: 4px;
         margin-bottom: 10px;
+        font-family: $font;
         transition: border-color 0.3s;
     }
 
@@ -37,6 +38,7 @@
         width: 100%;
         resize: none;
         padding-top: 4px;
+        
 
         &::placeholder {
             position: absolute;

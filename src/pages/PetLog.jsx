@@ -38,7 +38,9 @@ const PetLog = () => {
     >
       <div>
         <div className="logtop">
-          <h1>{listData.length > 0 ? `${listData[0].name}: Health Records` : 'Nėra įvesta 🩺 duomenų apie  🐶.'}</h1>
+        <h1>{listData.length > 0 ? `${listData[0].name}: Health Records` : 'Nėra įvesta 🩺 duomenų apie ' + (listData[0]?.name || 'gyvūną') + ' 🐶.'}</h1>
+
+
           <div>
             <Link to={`/add-pet-log/${id}`}>ADD LOG</Link>
             <Link to='/' className="log-link">GO BACK</Link>
